@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الكود الذكي - منتجات برمجية جاهزة</title>
+    <!-- تضمين Tailwind CSS للتصميم السريع والعصري -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- شريط الإعلانات العلوي البارز (Top Banner Ad) -->
+    <div class="bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 border-b border-indigo-700/50 py-2.5 px-4 text-center text-xs md:text-sm text-indigo-200">
+        <span class="bg-indigo-700 text-white text-[10px] px-2 py-0.5 rounded font-bold ml-2">إعلان</span>
+        احصل على استضافة ويب مجانية لمدة 3 أشهر مع قسيمة الخصم البرمجية <span class="font-bold underline text-white cursor-pointer">انقر هنا للتفاصيل</span>
+    </div>
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-400">
+                🚀 متجر البرمجيات
+            </div>
+            <nav class="hidden md:flex space-x-6 space-x-reverse text-gray-300">
+                <a href="#" class="hover:text-indigo-400 transition">الرئيسية</a>
+                <a href="#products" class="hover:text-indigo-400 transition">المنتجات</a>
+                <a href="#features" class="hover:text-indigo-400 transition">المميزات</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">اتصل بنا</a>
+            </nav>
+            <div>
+                <a href="#products" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg font-semibold transition shadow-lg shadow-indigo-500/30">
+                    تصفح المنتجات
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الواجهة الرئيسية (Hero Section) -->
+    <section class="py-20 text-center bg-gradient-to-b from-gray-800 to-gray-900 border-b border-gray-800">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <span class="bg-indigo-900/50 text-indigo-300 text-sm font-semibold px-4 py-1.5 rounded-full border border-indigo-700/50">
+                ✨ طور مشاريعك أسرع وبأقل تكلفة
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-6 mb-6 leading-tight">
+                أكواد وسكربتات جاهزة <br><span class="text-indigo-400">لتسريع مشروعك القادم</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                وفر آلاف ساعات العمل واحصل على سكربتات، قوالب، وإضافات برمجية عالية الجودة ومختبرة بالكامل.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#products" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-indigo-600/30">
+                    تسوق الآن
+                </a>
+                <a href="#features" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-bold px-8 py-3.5 rounded-xl border border-gray-700 transition">
+                    اعرف المزيد
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات البرمجية (Products Section) -->
+    <section id="products" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-3">أحدث المنتجات البرمجية</h2>
+            <p class="text-gray-400">منتجات مختارة بعناية لتلبية احتياجات المطورين وأصحاب الأعمال</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- منتج 1 -->
+            <div class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="bg-indigo-900/40 h-48 flex items-center justify-center text-indigo-400 text-5xl font-bold border-b border-gray-700">
+                        🛒
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-md font-semibold">سكربت متجر</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">متجر إلكتروني متكامل (PHP/Laravel)</h3>
+                        <p class="text-gray-400 text-sm mb-4">نظام متجر إلكتروني كامل مع لوحة تحكم، نظام دفع، وإدارة للمخزون جاهز للتشغيل.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-700/50 mt-4 pt-4">
+                    <span class="text-2xl font-bold text-indigo-400">$49</span>
+                    <button onclick="alert('تمت الإضافة إلى السلة بنجاح!')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                        شراء المنتج
+                    </button>
+                </div>
+            </div>
+
+            <!-- منتج 2 -->
+            <div class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="bg-blue-900/40 h-48 flex items-center justify-center text-blue-400 text-5xl font-bold border-b border-gray-700">
+                        📊
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-md font-semibold">لوحة تحكم</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">لوحة تحكم ادارية Admin Dashboard</h3>
+                        <p class="text-gray-400 text-sm mb-4">قالب لوحة تحكم عصري مبني بـ Tailwind CSS و Alpine.js متجاوب بالكامل مع كافة الشاشات.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-700/50 mt-4 pt-4">
+                    <span class="text-2xl font-bold text-indigo-400">$29</span>
+                    <button onclick="alert('تمت الإضافة إلى السلة بنجاح!')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                        شراء المنتج
+                    </button>
+                </div>
+            </div>
+
+            <!-- مساحة إعلانية داخل شبكة المنتجات (In-Grid Ad Space) -->
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border-2 border-dashed border-gray-600 p-6 flex flex-col justify-between text-center">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-[10px] bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded font-semibold border border-yellow-500/30">مساحة إعلانية (Ad Space)</span>
+                        <span class="text-xs text-gray-500">720x90 / Custom</span>
+                    </div>
+                    <div class="py-8">
+                        <p class="text-indigo-300 font-bold text-lg mb-2">هل تقدم خدمات برمجية؟</p>
+                        <p class="text-gray-400 text-xs leading-relaxed">اعلن هنا واستهدف آلاف المطورين وأصحاب المشاريع الناشئة يومياً.</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#contact" class="inline-block w-full bg-gray-700 hover:bg-gray-600 text-gray-200 text-xs font-semibold py-2.5 rounded-lg transition border border-gray-600">
+                        احجز هذه المساحة الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- منتج 3 -->
+            <div class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="bg-purple-900/40 h-48 flex items-center justify-center text-purple-400 text-5xl font-bold border-b border-gray-700">
+                        💬
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-md font-semibold">إضافة تفاعلية</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2">نظام دردشة فورية (Node.js & Socket.io)</h3>
+                        <p class="text-gray-400 text-sm mb-4">أضف ميزة المحادثة الفورية لموقعك أو تطبيقك بسهولة تامة مع توثيق كامل للربط.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-700/50 mt-4 pt-4">
+                    <span class="text-2xl font-bold text-indigo-400">$35</span>
+                    <button onclick="alert('تمت الإضافة إلى السلة بنجاح!')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                        شراء المنتج
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- مساحة إعلانية واسعة بالعرض (Wide Horizontal Banner Ad) -->
+    <section class="container mx-auto px-6 mb-20">
+        <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 text-center relative overflow-hidden">
+            <span class="absolute top-2 right-2 text-[10px] bg-gray-700 text-gray-400 px-2 py-0.5 rounded">إعلان ممول</span>
+            <div class="max-w-2xl mx-auto py-4">
+                <h4 class="text-lg font-bold text-gray-200 mb-1">تحتاج إلى مبرمج مستقل لتنفيذ فكرتك الخاصة؟</h4>
+                <p class="text-gray-400 text-sm mb-4">تواصل مع نخبة من أفضل المطورين المستقلين عبر منصتنا الشريكة.</p>
+                <button class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-6 py-2.5 rounded-lg transition">
+                    اكتشف المستقلين المتاحين
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- مميزات المتجر (Features Section) -->
+    <section id="features" class="py-20 bg-gray-800/50 border-t border-b border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-3">لماذا تختار متجرنا؟</h2>
+                <p class="text-gray-400">نضمن لك تجربة شراء آمنة ومنتجات بأعلى معايير الجودة البرمجية</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-indigo-400 text-3xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-2">تحميل فوري</h3>
+                    <p class="text-gray-400 text-sm">بمجرد إتمام عملية الشراء، سيكون رابط التحميل جاهزاً ومباشراً لحسابك.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-indigo-400 text-3xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-2">كود نظيف وآمن</h3>
+                    <p class="text-gray-400 text-sm">أكواد برمجية مفحوصة وموثقة بشكل ممتاز لتسهيل التعديل والتطوير عليها.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-indigo-400 text-3xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-2">دعم فني مستمر</h3>
+                    <p class="text-gray-400 text-sm">فريق الدعم الفني جاهز لمساعدتك في حال واجهتك أي مشكلة أثناء التركيب.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <footer id="contact" class="py-10 bg-gray-900 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-6">
+            <p class="mb-3">جميع الحقوق محفوظة &copy; 2026 - متجر البرمجيات</p>
+            <p>تواصل معنا لإحالة إعلاناتك عبر البريد: <span class="text-indigo-400">ads@mycodecart.com</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
